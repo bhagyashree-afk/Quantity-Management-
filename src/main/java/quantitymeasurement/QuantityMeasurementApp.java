@@ -100,6 +100,8 @@
         //create 2 inches objects with test values
 
 
+
+
         System.out.println("Enter first value in Inches:");
         double in1 = sc.nextDouble();
 
@@ -108,7 +110,6 @@
 
         boolean inchesResult = CheckInchesEquality(in1, in2);
         System.out.println("Inches Equality Result: " + inchesResult);
-
 
 
 
