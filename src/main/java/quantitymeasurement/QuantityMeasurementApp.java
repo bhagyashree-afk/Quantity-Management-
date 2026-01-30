@@ -1,14 +1,6 @@
-//package quantitymeasurement;
+package quantitymeasurement;
 
-
-/* Quantity Measurement App - UC1: Feet measurement equality
-    This  class is responsible for checking the equality of two numerical values measured in feet in the Quantity Measurement Application.
-*/
-
-// package
-//main class
-
- import java.util.Scanner;
+import java.util.Scanner;
 
 
  public class QuantityMeasurementApp {
