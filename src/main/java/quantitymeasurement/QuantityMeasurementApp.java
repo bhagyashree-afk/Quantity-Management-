@@ -98,8 +98,7 @@
         System.out.println("Feet Equality Result: " + feetResult);
 
         //create 2 inches objects with test values
-        //Inches obj3 = new Inches( 4);
-        //Inches obj4 = new Inches( 4);
+
 
         System.out.println("Enter first value in Inches:");
         double in1 = sc.nextDouble();
@@ -111,9 +110,7 @@
         System.out.println("Inches Equality Result: " + inchesResult);
 
 
-        // printing the result to verify equality
-        //System.out.println("Equal: " + obj3.equals(obj4));
-        //System.out.println("Equanl:"+ i1.equals(i2));
+
 
     }
 
