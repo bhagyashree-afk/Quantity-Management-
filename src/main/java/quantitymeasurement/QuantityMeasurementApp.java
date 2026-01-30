@@ -7,6 +7,8 @@
 
 // package
 //main class
+
+import java.util.Scanner;
  public class QuantityMeasurementApp {
 
     // created inner Feet class to represent Feet measurement
@@ -14,11 +16,11 @@
 
         // used encapsulation to store the measurement value as a private final field
         // and ensured immutability by making the value final
-        private final double feetValue;
+        private final double value;
 
         // constructor
-        public Feet(double feetValue) {
-            this.feetValue = feetValue;
+        public Feet(double value) {
+            this.value = value;
         }
 
         @Override
@@ -28,7 +30,7 @@
             if (obj == null || getClass() != obj.getClass())
                 return false;
             Feet f = (Feet) obj; // casting
-            return Double.compare(this.feetValue, f.feetValue) == 0; // here i have compare double values using
+            return Double.compare(this.value, f.value) == 0; // here i have compare double values using
             // Double.compare() instead of == opertor.
         }
 
@@ -39,11 +41,20 @@
         System.out.println("Quality Measurement App");
 
         // created 2 Feet objects with test values
-        Feet obj1 = new Feet(4.5);
-        Feet obj2 = new Feet(4.5);
+        Scanner sc = new Scanner(System.in);
 
-        // printing the result to verify equality
-        System.out.println("Equal: " + obj1.equals(obj2));
+        System.out.println("Enter first value in feet:");
+        double n1 = sc.nextDouble();
+
+        System.out.println("Enter second value in feet:");
+        double n2 = sc.nextDouble();
+
+        Feet f1 = new Feet(n1);
+        Feet f2 = new Feet(n2);
+
+        boolean result = f1.equals(f2);
+
+        System.out.println("Are both values equal? " + result);
 
     }
 
