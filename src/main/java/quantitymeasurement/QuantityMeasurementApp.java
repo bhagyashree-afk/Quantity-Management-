@@ -9,6 +9,11 @@ public class QuantityMeasurementApp{
 
         System.out.println("USING GENERIC METHOD : " + l1.equals(l2));
 
+        Length l3= new Length(1,Length.LengthUnit.YARDS);
+        Length l4= new Length (36,Length.LengthUnit.INCHES);
+
+        System.out.println("Are extended unit :" + l3.equals(l4));
+
 
     }
 }
